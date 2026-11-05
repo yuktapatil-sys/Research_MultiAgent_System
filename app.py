@@ -35,7 +35,7 @@ st.subheader("Research Configuration")
 
 topic = st.text_input(
     "Enter your research topic",
-    placeholder="Example: Generative AI in Healthcare"
+    placeholder="Example: Cancer prediction system"
 )
 
 col1, col2 = st.columns(2)
