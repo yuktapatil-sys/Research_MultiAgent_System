@@ -16,7 +16,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📚 AI-Powered Research Paper Assistant")
+st.title("📚 System AI Research Paper Assistant")
 
 st.write(
     "Discover research papers, summarize studies, "
@@ -45,14 +45,14 @@ with col1:
         "Number of research papers",
         min_value=3,
         max_value=15,
-        value=5
+        value=7
     )
 
 with col2:
     year_from = st.selectbox(
         "Search papers published from",
         options=list(range(2026, 2014, -1)),
-        index=6
+        index=7
     )
 
 st.caption(
