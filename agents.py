@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -27,15 +26,13 @@ if not GROQ_API_KEY:
 
 # Configure Groq LLM
 # Configure Groq LLM
+# Configure Groq LLM using OpenAI-compatible endpoint
 llm = LLM(
-    model=os.getenv(
-        "GROQ_MODEL",
-        "groq/openai/gpt-oss-20b"
-    ),
+    model="openai/gpt-oss-20b",
+    base_url="https://api.groq.com/openai/v1",
     api_key=GROQ_API_KEY,
     temperature=0.2
 )
-
 
 # ------------------------------------------------
 # AGENT 1: DISCOVERY AGENT
